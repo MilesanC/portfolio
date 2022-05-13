@@ -1,0 +1,17 @@
+.portfolio {
+  background-color: rgb(48, 0, 0);
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 2px rgb(140, 0, 0) solid;
+}
