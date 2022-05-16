@@ -1,0 +1,76 @@
+.container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(159, 48, 48);
+  margin: 0 1rem 1rem;
+  overflow: hidden;
+}
+
+.image {
+  width: 6rem;
+}
+
+.title {
+  position: absolute;
+  padding: 5rem;
+  display: none;
+}
+
+.container:hover .title {
+  animation: show 0.3s ease;
+  background-color: rgb(217, 0, 0);
+  font-size: 1.5rem;
+  display: block;
+}
+
+@keyframes show {
+  0% {
+    background-color: rgb(159, 48, 48);
+    font-size: 1rem;
+  }
+  100% {
+    background-color: rgb(217, 0, 0);
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+
+  .image {
+    width: 5.5rem;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .image {
+    width: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .image {
+    width: 2.5rem;
+  }
+}

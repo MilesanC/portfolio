@@ -1,0 +1,28 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .list {
+    width: 50rem;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .list {
+    width: 40rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .list {
+    width: 20rem;
+  }
+}
